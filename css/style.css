@@ -1,0 +1,370 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,italic,700&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Grey+Qo:regular&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:regular,700,700italic&display=swap&subset=cyrillic-ext);
+/* &display=swap&subset=cyrillic-ext */
+
+@font-face {
+	font-family: "Arctika script";
+	src: url("../fonts/Arctikascript/Arctikascript.woff2") format("woff2"),
+		url("../fonts/Arctikascript/Arctikascript.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"),
+		url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url("../fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"),
+		url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url("../fonts/ProximaNova/ProximaNova-RegularIt.woff2") format("woff2"),
+		url("../fonts/ProximaNova/ProximaNova-RegularIt.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+
+/* Шрифты */
+
+/*-----------------------------------*/
+/* Lesson 5 */
+/* Padding не работает на строчных элементах. */
+
+.first_block {
+	background-color: cadetblue;
+	margin-bottom: 25px;
+}
+.padding_test {
+	border: 7px solid #000;
+	background-color: burlywood;
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+}
+.h2_padding {
+	display: inline;
+	color: green;
+	padding-left: 100px;
+	padding-top: 150px;
+}
+.img_padding {
+	padding: 7% 20px 7% 7%;
+}
+.p_padding {
+	font-family: "Proxima Nova Rg", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 24px;
+	display: inline;
+	color: red;
+	padding: 50px;
+}
+.span_padding {
+	font-family: "Arctika script", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	color: blue;
+	padding-top: 150px;
+}
+
+/* ---------------------------------------------- */
+
+/* Margin не работает на строных элементах, может быть отрицательным. */
+.second_block {
+	background-color: wheat;
+	height: 750px;
+	margin-bottom: 35px;
+}
+.margin_test {
+	width: 600px;
+	height: 600px;
+	border: 5px solid #000;
+	overflow: hidden;
+}
+.h2_margin {
+	border: 5px dotted #000;
+	margin: 0 50px 50px 0;
+}
+.img_margin {
+	border: 5px solid #000;
+	margin: 70px 15% 35px;
+}
+.p_margin {
+	border: 5px dotted #000;
+	margin-bottom: 30px;
+	margin-right: 50px;
+}
+.span_margin {
+	color: aqua;
+	background-color: blueviolet;
+	text-decoration: underline;
+	display: inline-block;
+	border: 5px solid #000;
+	margin: 15px 35px;
+	font-weight: 700;
+	font-family: "Titillium Web", sans-serif;
+	font-style: italic;
+}
+.span_-margin {
+	color: aqua;
+	background-color: blueviolet;
+	text-decoration: underline;
+	display: block;
+	border: 5px solid #000;
+	margin: -55px -40px;
+	font-weight: 700;
+	font-family: "Titillium Web", sans-serif;
+	font-style: italic;
+}
+
+/* -------------------------------------- */
+
+.width_and_height {
+	max-width: 100%;
+	max-height: 100%;
+	background-color: chocolate;
+	border: 5px solid #000;
+	margin-bottom: 10px;
+}
+.test_1 {
+	background-color: aqua;
+	min-width: 250px;
+	min-height: 250px;
+}
+.test_2 {
+	background-color: firebrick;
+	width: 150px;
+	height: 250px;
+}
+.test_3 {
+	width: auto;
+	background-color: fuchsia;
+	height: 500px;
+	margin-bottom: 10px;
+}
+.test_centering {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+	border: 3px solid #000;
+	overflow: auto;
+}
+.margin_cnetering {
+	margin-bottom: 10px;
+	overflow: scroll;
+}
+
+.other_tests {
+	min-height: 200px;
+	width: auto;
+}
+.link_bad {
+	display: block;
+	height: 100px;
+	text-align: center;
+	opacity: 0;
+	margin-right: 50px;
+}
+.link_good {
+	background-color: darkkhaki;
+	display: block;
+	width: auto;
+	height: 50px;
+	border: 1px solid #000;
+	margin-top: -100px;
+}
+
+/* Дополнительные задачи */
+.extra_task {
+	color: red;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+.extra_task_1 {
+	display: block;
+	width: 200px;
+	height: 20px;
+	margin: 10px auto;
+	color: red;
+	background-color: #000;
+}
+/* Самый простой вариант :) Так лучше не делать, но как вариант, результат нужный нам.  */
+.task_1 {
+	background-color: bisque;
+}
+.task_1_1 span {
+	display: block;
+	background-color: deepskyblue;
+}
+.task_1_2 {
+	background-color: aquamarine;
+	width: 50px;
+}
+/* Этот вариант на очень большом экране сломается, но все же имеет место быть. Возможно есть способ сделать так, что бы не сломалось, но я пока хз */
+.task_1_3 {
+	background-color: dodgerblue;
+	max-width: 3%;
+	max-width: 25px;
+}
+.task_1_4 {
+	background-color: gold;
+	padding-right: 99%;
+}
+/* Flex мы еще не проходили, но я смотрел уроки Жени на ютубе :) */
+.task_1_5 span {
+	background-color: goldenrod;
+	display: flex;
+}
+.task_1_6 span {
+	margin: 0 100% 0 0;
+	background-color: indianred;
+}
+
+/* --------------------------------------- */
+.home_task_2 {
+	text-align: center;
+}
+.task_2 {
+	max-width: 200px;
+	max-height: 200px;
+	padding: 15px;
+	display: inline-block;
+	background-color: fuchsia;
+}
+/* ------------------------------------------- */
+
+.home_task_3 {
+	text-align: center;
+}
+.home_task_3 h4 {
+	margin-bottom: 50px;
+}
+.link_1 {
+	display: inline-block;
+	margin: 0 0 30px 0;
+}
+
+/* ----------------------------------------------- */
+
+.task4 {
+	text-align: center;
+}
+.task_4 {
+	display: inline-block;
+	max-width: 100px;
+	background-color: darkorange;
+	padding: 10px;
+}
+.task_4_margin {
+	margin-right: 50px;
+}
+
+/* -------------------------------------- */
+
+.task_5 {
+	padding: 30px;
+	background-color: darkorchid;
+}
+.task_5_1 {
+	padding: 30px;
+	margin-top: -60px;
+	background-color: rgb(139, 0, 0, 0.5);
+	margin-bottom: 80px;
+}
+
+/* Если по ф12 в хроме смотреть, то второй див на первого лезет :) */
+.home_task5 {
+	text-align: center;
+}
+
+.task5 {
+	padding: 30px;
+	background-color: darkorchid;
+}
+.task51 {
+	display: inline;
+	background-color: rgb(139, 0, 0, 0.5);
+	padding: 30px;
+}
+/* --------------------------------------------------- */
+
+.task_6 {
+	text-align: center;
+	background-color: chocolate;
+}
+.task6 {
+	display: inline-block;
+	max-height: 200px;
+	max-width: 700px;
+	overflow: auto;
+	background-color: darkseagreen;
+}
